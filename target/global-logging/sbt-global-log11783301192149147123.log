@@ -1,0 +1,143 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\aksha\AppData\Local\Temp\idea.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\aksha\AppData\Local\Temp\idea.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.7.3 (Oracle Corporation Java 18.0.2.1)
+[debug]       Load.loadUnit: plugins took 55.5836ms
+[debug]       Load.loadUnit: defsScala took 0.1532ms
+[debug] [Loading] Scanning directory C:\Users\aksha\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\aksha\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 11.9107 ms
+[debug]           Load.resolveProject(global-plugins) took 26.7879ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\aksha\.sbt\1.0\plugins, plugins: List(<none>))) took 55.969ms
+[debug] [Loading] Done in C:\Users\aksha\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 72.061ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.1496ms
+[debug]     Load.loadUnit(file:/C:/Users/aksha/.sbt/1.0/plugins/, ...) took 136.1949ms
+[debug]   Load.apply: load took 269.1183ms
+[debug]   Load.apply: resolveProjects took 4.4127ms
+[debug]   Load.apply: finalTransforms took 41.4737ms
+[debug]   Load.apply: config.delegates took 7.8456ms
+[debug]   Load.apply: Def.make(settings)... took 231.7427ms
+[debug]   Load.apply: structureIndex took 51.2992ms
+[debug]   Load.apply: mkStreams took 0.8057ms
+[info] loading global plugins from C:\Users\aksha\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 1387.1056ms
+[debug]           Load.loadUnit: plugins took 9.9996ms
+[debug]           Load.loadUnit: defsScala took 0.0027ms
+[debug] [Loading] Scanning directory C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\project
+[debug]             Load.loadUnit: mkEval took 3.7629ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 0.9159 ms
+[info] loading settings for project cs441-cloudsimplus-hw3-build from idea.sbt ...
+[debug]               Load.resolveProject(cs441-cloudsimplus-hw3-build) took 4.8645ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id cs441-cloudsimplus-hw3-build, base: C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\project, plugins: List(<none>))) took 6.0755ms
+[debug] [Loading] Done in C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\project, returning: (cs441-cloudsimplus-hw3-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 1048.8553ms
+[debug]           Load.loadUnit: cleanEvalClasses took 3.3103ms
+[debug]         Load.loadUnit(file:/C:/Users/aksha/Desktop/UIC/CS%20441/Projects/HW3/CS441-CloudSimPlus-HW3/project/, ...) took 1062.7324ms
+[debug]       Load.apply: load took 1063.6701ms
+[debug]       Load.apply: resolveProjects took 0.068ms
+[debug]       Load.apply: finalTransforms took 6.557ms
+[debug]       Load.apply: config.delegates took 0.2163ms
+[debug]       Load.apply: Def.make(settings)... took 46.7152ms
+[debug]       Load.apply: structureIndex took 16.8397ms
+[debug]       Load.apply: mkStreams took 0.0015ms
+[info] loading project definition from C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] Unrecognized repository Scala Plugin Bundled Repository, ignoring it
+[warn] Unrecognized repository Scala Plugin Bundled Repository, ignoring it
+[debug]     Load.loadUnit: plugins took 1718.4705ms
+[debug]     Load.loadUnit: defsScala took 0.0017ms
+[debug] [Loading] Scanning directory C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3
+[debug]       Load.loadUnit: mkEval took 0.1668ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin)))
+[debug] Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 0.9756 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 16.4223ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3, plugins: List(<none>))) took 18.3915ms
+[debug] [Loading] Done in C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 631.3046ms
+[debug]     Load.loadUnit: cleanEvalClasses took 9.9338ms
+[debug]   Load.loadUnit(file:/C:/Users/aksha/Desktop/UIC/CS%20441/Projects/HW3/CS441-CloudSimPlus-HW3/, ...) took 2360.2815ms
+[debug] Load.apply: load took 2361.2781ms
+[debug] Load.apply: resolveProjects took 0.0596ms
+[debug] Load.apply: finalTransforms took 13.9861ms
+[debug] Load.apply: config.delegates took 0.1524ms
+[debug] Load.apply: Def.make(settings)... took 31.2845ms
+[debug] Load.apply: structureIndex took 13.2974ms
+[debug] Load.apply: mkStreams took 0.0019ms
+[info] set current project to CS441-CloudSimPlus-HW3 (in build file:/C:/Users/aksha/Desktop/UIC/CS%20441/Projects/HW3/CS441-CloudSimPlus-HW3/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(; set ideaPort in Global := 58668 ; idea-shell, None, None)
+[debug] > Exec(set ideaPort in Global := 58668, None, None)
+[info] Defining Global / ideaPort
+[info] The new value will be used by Compile / compile, Test / compile
+[debug] Defining 
+[debug] 	Global / ideaPort
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Compile / compile
+[debug] 	Test / compile
+[info] Reapplying settings...
+[info] set current project to CS441-CloudSimPlus-HW3 (in build file:/C:/Users/aksha/Desktop/UIC/CS%20441/Projects/HW3/CS441-CloudSimPlus-HW3/)
+[debug] > Exec(idea-shell, None, None)
