@@ -1,0 +1,117 @@
+00:30:34.111 [main] INFO  java.lang.Object - Using Space Shared Policy for Scheduling VMs.
+00:30:34.124 [main] INFO  java.lang.Object - Using Space Shared Policy for Scheduling VMs.
+00:30:34.124 [main] INFO  java.lang.Object - Using Space Shared Policy for Scheduling VMs.
+00:30:34.124 [main] INFO  java.lang.Object - Using Space Shared Policy for Scheduling VMs.
+00:30:34.124 [main] INFO  java.lang.Object - Using Space Shared Policy for Scheduling VMs.
+00:30:34.124 [main] INFO  java.lang.Object - Using Space Shared Policy for Scheduling VMs.
+00:30:34.124 [main] INFO  java.lang.Object - Using Space Shared Policy for Scheduling VMs.
+00:30:34.125 [main] INFO  java.lang.Object - Using Space Shared Policy for Scheduling VMs.
+00:30:34.125 [main] INFO  java.lang.Object - Using Space Shared Policy for Scheduling VMs.
+00:30:34.125 [main] INFO  java.lang.Object - Using Space Shared Policy for Scheduling VMs.
+00:30:34.140 [main] INFO  CloudSim - 
+================== Starting CloudSim Plus 7.3.0 ==================
+
+00:30:34.142 [main] INFO  Datacenter - 0.00: DatacenterSimple1 is starting...
+00:30:34.144 [main] INFO  DatacenterBroker - DatacenterBrokerSimple2 is starting...
+00:30:34.145 [main] INFO  CloudSim - Entities started.
+00:30:34.148 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: List of 1 datacenters(s) received.
+00:30:34.148 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 0 in DatacenterSimple1
+00:30:34.148 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 1 in DatacenterSimple1
+00:30:34.153 [main] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 0 has been allocated to Host 0/DC 1
+00:30:34.154 [main] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 1 has been allocated to Host 1/DC 1
+00:30:34.155 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 0 to Vm 0 in Host 0/DC 1.
+00:30:34.155 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 1 to Vm 1 in Host 1/DC 1.
+00:30:34.155 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: All 2 waiting Cloudlets submitted to some VM.
+00:30:34.161 [main] INFO  DatacenterBroker - 20.11: DatacenterBrokerSimple2: Cloudlet 0 finished in Vm 0 and returned to broker.
+00:30:34.161 [main] INFO  DatacenterBroker - 20.11: DatacenterBrokerSimple2: Cloudlet 1 finished in Vm 1 and returned to broker.
+00:30:34.162 [main] INFO  CloudSim - 20.22: Processing last events before simulation shutdown.
+00:30:34.163 [main] INFO  DatacenterBroker - 20.22: DatacenterBrokerSimple2 is shutting down...
+00:30:34.163 [main] INFO  DatacenterBroker - 20.22: DatacenterBrokerSimple2: Requesting Vm 1 destruction.
+00:30:34.163 [main] INFO  DatacenterBroker - 20.22: DatacenterBrokerSimple2: Requesting Vm 0 destruction.
+00:30:34.164 [main] INFO  Datacenter - 20.22: DatacenterSimple: Vm 1 destroyed on Host 1/DC 1. 
+00:30:34.165 [main] INFO  Datacenter - 20.22: DatacenterSimple: Vm 0 destroyed on Host 0/DC 1. 
+00:30:34.165 [main] INFO  CloudSim - Simulation: No more future events
+
+00:30:34.165 [main] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+00:30:34.165 [main] INFO  CloudSim - 
+================== Simulation finished at time 20.22 ==================
+
+00:35:21.043 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:35:21.058 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:35:21.058 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:35:21.058 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:35:21.058 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:35:21.058 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:35:21.058 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:35:21.058 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:35:21.059 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:35:21.059 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:35:21.071 [main] INFO  CloudSim - 
+================== Starting CloudSim Plus 7.3.0 ==================
+
+00:35:21.073 [main] INFO  Datacenter - 0.00: DatacenterSimple1 is starting...
+00:35:21.075 [main] INFO  DatacenterBroker - DatacenterBrokerSimple2 is starting...
+00:35:21.075 [main] INFO  CloudSim - Entities started.
+00:35:21.078 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: List of 1 datacenters(s) received.
+00:35:21.078 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 0 in DatacenterSimple1
+00:35:21.078 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 1 in DatacenterSimple1
+00:35:21.083 [main] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 0 has been allocated to Host 0/DC 1
+00:35:21.084 [main] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 1 has been allocated to Host 1/DC 1
+00:35:21.084 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 0 to Vm 0 in Host 0/DC 1.
+00:35:21.084 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 1 to Vm 1 in Host 1/DC 1.
+00:35:21.085 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: All 2 waiting Cloudlets submitted to some VM.
+00:35:21.090 [main] INFO  DatacenterBroker - 20.11: DatacenterBrokerSimple2: Cloudlet 0 finished in Vm 0 and returned to broker.
+00:35:21.090 [main] INFO  DatacenterBroker - 20.11: DatacenterBrokerSimple2: Cloudlet 1 finished in Vm 1 and returned to broker.
+00:35:21.091 [main] INFO  CloudSim - 20.22: Processing last events before simulation shutdown.
+00:35:21.092 [main] INFO  DatacenterBroker - 20.22: DatacenterBrokerSimple2 is shutting down...
+00:35:21.092 [main] INFO  DatacenterBroker - 20.22: DatacenterBrokerSimple2: Requesting Vm 1 destruction.
+00:35:21.092 [main] INFO  DatacenterBroker - 20.22: DatacenterBrokerSimple2: Requesting Vm 0 destruction.
+00:35:21.094 [main] INFO  Datacenter - 20.22: DatacenterSimple: Vm 1 destroyed on Host 1/DC 1. 
+00:35:21.094 [main] INFO  Datacenter - 20.22: DatacenterSimple: Vm 0 destroyed on Host 0/DC 1. 
+00:35:21.094 [main] INFO  CloudSim - Simulation: No more future events
+
+00:35:21.094 [main] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+00:35:21.094 [main] INFO  CloudSim - 
+================== Simulation finished at time 20.22 ==================
+
+00:53:52.324 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:53:52.336 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:53:52.337 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:53:52.337 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:53:52.337 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:53:52.337 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:53:52.337 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:53:52.337 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:53:52.337 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:53:52.337 [main] INFO  java.lang.Object - Host is using Space Shared Policy for Scheduling VMs.
+00:53:52.349 [main] INFO  CloudSim - 
+================== Starting CloudSim Plus 7.3.0 ==================
+
+00:53:52.351 [main] INFO  Datacenter - 0.00: DatacenterSimple1 is starting...
+00:53:52.353 [main] INFO  DatacenterBroker - DatacenterBrokerSimple2 is starting...
+00:53:52.353 [main] INFO  CloudSim - Entities started.
+00:53:52.355 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: List of 1 datacenters(s) received.
+00:53:52.355 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 0 in DatacenterSimple1
+00:53:52.356 [main] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple2: Trying to create Vm 1 in DatacenterSimple1
+00:53:52.359 [main] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 0 has been allocated to Host 0/DC 1
+00:53:52.360 [main] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 1 has been allocated to Host 1/DC 1
+00:53:52.361 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 0 to Vm 0 in Host 0/DC 1.
+00:53:52.361 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: Sending Cloudlet 1 to Vm 1 in Host 1/DC 1.
+00:53:52.361 [main] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple2: All 2 waiting Cloudlets submitted to some VM.
+00:53:52.366 [main] INFO  DatacenterBroker - 20.11: DatacenterBrokerSimple2: Cloudlet 0 finished in Vm 0 and returned to broker.
+00:53:52.367 [main] INFO  DatacenterBroker - 20.11: DatacenterBrokerSimple2: Cloudlet 1 finished in Vm 1 and returned to broker.
+00:53:52.368 [main] INFO  CloudSim - 20.22: Processing last events before simulation shutdown.
+00:53:52.368 [main] INFO  DatacenterBroker - 20.22: DatacenterBrokerSimple2 is shutting down...
+00:53:52.368 [main] INFO  DatacenterBroker - 20.22: DatacenterBrokerSimple2: Requesting Vm 1 destruction.
+00:53:52.368 [main] INFO  DatacenterBroker - 20.22: DatacenterBrokerSimple2: Requesting Vm 0 destruction.
+00:53:52.369 [main] INFO  Datacenter - 20.22: DatacenterSimple: Vm 1 destroyed on Host 1/DC 1. 
+00:53:52.370 [main] INFO  Datacenter - 20.22: DatacenterSimple: Vm 0 destroyed on Host 0/DC 1. 
+00:53:52.370 [main] INFO  CloudSim - Simulation: No more future events
+
+00:53:52.370 [main] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+00:53:52.370 [main] INFO  CloudSim - 
+================== Simulation finished at time 20.22 ==================
+

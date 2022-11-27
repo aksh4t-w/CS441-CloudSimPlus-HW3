@@ -1,0 +1,5 @@
+package CloudSimTests
+
+class ConfigParamsTest {
+
+}

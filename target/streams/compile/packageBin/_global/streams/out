@@ -1,0 +1,73 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\cs441-cloudsimplus-hw3_2.13-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CloudSimulation[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\CloudSimulation[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CloudSimulation\IaasSimulation$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\CloudSimulation\IaasSimulation$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CloudSimulation\IaasSimulation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\CloudSimulation\IaasSimulation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CloudSimulation\LoadBalancerSimulation$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\CloudSimulation\LoadBalancerSimulation$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CloudSimulation\LoadBalancerSimulation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\CloudSimulation\LoadBalancerSimulation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CloudSimulation\NetworkSimulation$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\CloudSimulation\NetworkSimulation$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CloudSimulation\NetworkSimulation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\CloudSimulation\NetworkSimulation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CloudSimulation\PaasSimulation$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\CloudSimulation\PaasSimulation$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CloudSimulation\PaasSimulation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\CloudSimulation\PaasSimulation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CloudSimulation\SaasSimulation$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\CloudSimulation\SaasSimulation$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CloudSimulation\SaasSimulation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\CloudSimulation\SaasSimulation.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CloudSimulation\Simulations$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\CloudSimulation\Simulations$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CloudSimulation\Simulations.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\CloudSimulation\Simulations.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CloudSimulation\SpaceSharedScheduling$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\CloudSimulation\SpaceSharedScheduling$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CloudSimulation\SpaceSharedScheduling.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\CloudSimulation\SpaceSharedScheduling.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CloudSimulation\TimeSharedScheduling$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\CloudSimulation\TimeSharedScheduling$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CloudSimulation\TimeSharedScheduling.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\CloudSimulation\TimeSharedScheduling.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelperUtils[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\HelperUtils[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelperUtils\CommonUtils$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\HelperUtils\CommonUtils$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelperUtils\CommonUtils.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\HelperUtils\CommonUtils.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelperUtils\CreateLogger$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\HelperUtils\CreateLogger$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelperUtils\CreateLogger.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\HelperUtils\CreateLogger.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelperUtils\NetworkUtils$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\HelperUtils\NetworkUtils$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HelperUtils\NetworkUtils.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\HelperUtils\NetworkUtils.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	IaaS.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\IaaS.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	NetworkSim.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\NetworkSim.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\resources[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\resources\application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\IaaS.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\resources\IaaS.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\NetworkSim.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\resources\NetworkSim.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\SaaS.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\resources\SaaS.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\TimeShared.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\resources\TimeShared.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SaaS.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\SaaS.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	TimeShared.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\aksha\Desktop\UIC\CS 441\Projects\HW3\CS441-CloudSimPlus-HW3\target\scala-2.13\classes\TimeShared.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

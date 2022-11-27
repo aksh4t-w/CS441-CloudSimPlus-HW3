@@ -25,8 +25,10 @@ package CloudSimulation
 
 import com.typesafe.config.{Config, ConfigFactory}
 import org.cloudbus.cloudsim.network.topologies.NetworkTopology
-import org.cloudbus.cloudsim.vms.VmCost
+import org.cloudbus.cloudsim.power.models.PowerModelHostSimple
+import org.cloudbus.cloudsim.vms.{HostResourceStats, VmCost, VmResourceStats}
 
+import java.util.Comparator.comparingLong
 import scala.collection.convert.ImplicitConversions.`collection AsScalaIterable`
 //import CloudSimulation.Simulations.NETWORK_TOPOLOGY_FILE
 import org.cloudbus.cloudsim.brokers.DatacenterBroker
@@ -47,7 +49,7 @@ import org.cloudbus.cloudsim.vms.Vm
 import org.cloudbus.cloudsim.vms.VmSimple
 import org.cloudsimplus.builders.tables.CloudletsTableBuilder
 
-import java.util
+//import java.util
 import java.util.{ArrayList, List}
 
 
@@ -57,7 +59,7 @@ import java.util.{ArrayList, List}
  *
  * <p>It defines a set of constants that enables a developer
  * to change the number of Hosts, VMs and Cloudlets to create
- * and the number of {@link Pe}s for Hosts, VMs and Cloudlets.</p>
+ * and the number of Pes for Hosts, VMs and Cloudlets.</p>
  *
  * @author Manoel Campos da Silva Filho
  * @since CloudSim Plus 1.0
@@ -84,6 +86,20 @@ object Simulations {
   /** In seconds. */
   private val NETWORK_LATENCY = 10.0
 
+
+  /** Indicates the time (in seconds) the Host takes to start up. */
+  private val HOST_START_UP_DELAY = 5
+
+  /** Indicates the time (in seconds) the Host takes to shut down. */
+  private val HOST_SHUT_DOWN_DELAY = 3
+
+  /** Indicates Host power consumption (in Watts) during startup. */
+  private val HOST_START_UP_POWER = 5
+
+  /** Indicates Host power consumption (in Watts) during shutdown. */
+  private val HOST_SHUT_DOWN_POWER = 3
+  private val MAX_POWER = 65
+  private val STATIC_POWER = 40
   def main(args: Array[String]): Unit = {
     new Simulations
   }
@@ -91,10 +107,9 @@ object Simulations {
 
 class Simulations private() {
   val config = ConfigFactory.load("application.conf")
-  val DATACENTERS: Int = config.getInt("CloudSimConfig.DATACENTERS")
-  val BROKERS: Int = config.getInt("CloudSimConfig.BROKERS")
+  val DATACENTERS: Int = config.getInt("CloudSimConfig.Datacenter.DATACENTERS")
+  val BROKERS: Int = 3
 
-  //  println(DATACENTERS)
   /*Enables just some level of log messages.
     Make sure to import org.cloudsimplus.util.Log;
   */
@@ -139,7 +154,7 @@ class Simulations private() {
    * @return
    */
   private def createDatacenters = {
-    val list = new util.ArrayList[Datacenter](DATACENTERS)
+    val list = new ArrayList[Datacenter](DATACENTERS)
     for (i <- 1 to DATACENTERS) {
       list.add(createDatacenter)
     }
@@ -149,10 +164,10 @@ class Simulations private() {
   /**
    * Creates a Datacenter and its Hosts.
    *
-   * @param hostsPes the number of PEs for the Hosts in the Datacenter created
+   * @param hostPes the number of PEs for the Hosts in the Datacenter created
    */
   private def createDatacenter = {
-    val hostList = new util.ArrayList[Host](Simulations.HOSTS)
+    val hostList = new ArrayList[Host](Simulations.HOSTS)
     for (i <- 0 until Simulations.HOSTS) {
       val host = createHost
       hostList.add(host)
@@ -180,7 +195,7 @@ class Simulations private() {
   }
 
   private def createBrokers = {
-    val list = new util.ArrayList[DatacenterBroker](BROKERS)
+    val list = new ArrayList[DatacenterBroker](BROKERS)
     for (i <- 0 until BROKERS) {
       val broker = new DatacenterBrokerSimple(simulation)
 
@@ -192,23 +207,46 @@ class Simulations private() {
   }
 
   private def createHost = {
-    val peList = new util.ArrayList[Pe](Simulations.HOST_PES)
+    val peList = new ArrayList[Pe](Simulations.HOST_PES)
     //List of Host's CPUs (Processing Elements, PEs)
     for (_ <- 0 until Simulations.HOST_PES) { //Uses a PeProvisionerSimple by default to provision PEs for VMs
       peList.add(new PeSimple(Simulations.HOST_MIPS))
     }
-    /*
-      Uses ResourceProvisionerSimple by default for RAM and BW provisioning
-      and VmSchedulerSpaceShared for VM scheduling.
-    */
-    new HostSimple(Simulations.HOST_RAM, Simulations.HOST_BW, Simulations.HOST_STORAGE, peList)
+
+    val powerModel = new PowerModelHostSimple(Simulations.MAX_POWER, Simulations.STATIC_POWER)
+    powerModel.setStartupDelay(Simulations.HOST_START_UP_DELAY).setShutDownDelay(Simulations.HOST_SHUT_DOWN_DELAY).setStartupPower(Simulations.HOST_START_UP_POWER).setShutDownPower(Simulations.HOST_SHUT_DOWN_POWER)
+
+    val host = new HostSimple(Simulations.HOST_RAM, Simulations.HOST_BW, Simulations.HOST_STORAGE, peList)
+    host.setPowerModel(powerModel)
+    host.enableUtilizationStats
+    host
   }
+  // -------------------------------------------------------------------------------------------------------------------
+
+  private def printHostCpuUtilizationAndPowerConsumption(host: Host): Unit = {
+    val cpuStats = host.getCpuUtilizationStats
+    //The total Host's CPU utilization for the time specified by the map key
+    val utilizationPercentMean = cpuStats.getMean
+    val watts = host.getPowerModel.getPower(utilizationPercentMean)
+    System.out.printf("Host %2d CPU Usage mean: %6.1f%% | Power Consumption mean: %8.0f W%n", host.getId, utilizationPercentMean * 100, watts)
+  }
+
+//  private def printHostsCpuUtilizationAndPowerConsumption(): Unit = {
+//    System.out.println()
+//
+//    for (host <- hostList) {
+//      printHostCpuUtilizationAndPowerConsumption(host)
+//    }
+//    System.out.println()
+//  }
+
+  // -------------------------------------------------------------------------------------------------------------------
 
   /**
    * Creates a list of VMs.
    */
   private def createAndSubmitVms(broker: DatacenterBroker) = {
-    val vmList = new util.ArrayList[Vm](Simulations.VMS)
+    val vmList = new ArrayList[Vm](Simulations.VMS)
     for (_ <- 0 until Simulations.VMS) { //Uses a CloudletSchedulerTimeShared by default to schedule Cloudlets
       val vm = new VmSimple(Simulations.HOST_MIPS, Simulations.VM_PES)
       vm.setRam(512).setBw(1000).setSize(10_000).setCloudletScheduler(new CloudletSchedulerSpaceShared)
@@ -222,7 +260,7 @@ class Simulations private() {
    * Creates a list of Cloudlets.
    */
   private def createAndSubmitCloudlets(broker: DatacenterBroker) = {
-    val cloudletList = new util.ArrayList[Cloudlet](Simulations.CLOUDLETS)
+    val cloudletList = new ArrayList[Cloudlet](Simulations.CLOUDLETS)
     val utilizationModelFull = new UtilizationModelFull
 //    /* A utilization model for RAM and BW that uses only 50% of the resource capacity all the time. */
 //    val utilizationModelDynamic = new UtilizationModelDynamic(0.5)
@@ -246,6 +284,7 @@ class Simulations private() {
    * Computes and print the cost ($) of resources (processing, bw, memory, storage)
    * for each VM inside the datacenter.
    */
+// DO: Fix the vars in this part.
   private def printTotalVmsCost(): Unit = {
     System.out.println()
     var totalCost: Double = 0
@@ -256,7 +295,7 @@ class Simulations private() {
     var bwTotalCost: Double = 0
 
 
-    for (vm: Vm <- brokerList.get(0).getVmCreatedList: java.util.List[Vm]) {
+    for (vm: Vm <- brokerList.get(0).getVmCreatedList: List[Vm]) {
       val cost = new VmCost(vm)
       processingTotalCost += cost.getProcessingCost
       memoryTotalCost += cost.getMemoryCost
