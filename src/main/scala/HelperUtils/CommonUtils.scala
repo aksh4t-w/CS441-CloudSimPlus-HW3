@@ -207,7 +207,7 @@ object CommonUtils {
 
     val networkTopology = new BriteNetworkTopology
     simulation.setNetworkTopology(networkTopology)
-    networkTopology.addLink(broker, datacenterList.get(dc_number-1), NETWORK_BW, NETWORK_LATENCY)
+    networkTopology.addLink(broker, datacenterList.get(dc_number), NETWORK_BW, NETWORK_LATENCY)
   }
   // -------------------------------------------------------------------------------------------------------------------
   // Network configurations:

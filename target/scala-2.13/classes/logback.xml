@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Logback configuration file. For details check http://logback.qos.ch -->
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%highlight(%-5level %msg%n)</pattern>
+        </encoder>
+    </appender>
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- Daily rollover -->
+            <fileNamePattern>log/CloudSimulation.%d{yyyy-MM-dd}.log</fileNamePattern>
+
+            <maxHistory>100</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Configure so that it outputs to both console and log file -->
+    <root level="INFO">
+        <appender-ref ref="FILE" />
+        <appender-ref ref="STDOUT" />
+    </root>
+    <root level="debug">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>
+
+        <!--<configuration scan="true" scanPeriod="60 seconds" trace="true">-->
+<!--    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">-->
+<!--        <encoder>-->
+<!--            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>-->
+<!--        </encoder>-->
+<!--    </appender>-->
+
+
+<!--    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+<!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+<!--            &lt;!&ndash; Daily rollover &ndash;&gt;-->
+<!--            <fileNamePattern>log/CloudSimulation.%d{yyyy-MM-dd}.log</fileNamePattern>-->
+
+<!--            <maxHistory>100</maxHistory>-->
+<!--        </rollingPolicy>-->
+
+<!--        <encoder>-->
+<!--            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>-->
+<!--        </encoder>-->
+<!--    </appender>-->
+
+<!--    &lt;!&ndash; Configure so that it outputs to both console and log file &ndash;&gt;-->
+<!--    <root level="INFO">-->
+<!--        <appender-ref ref="FILE" />-->
+<!--        <appender-ref ref="STDOUT" />-->
+<!--    </root>-->
+<!--</configuration>-->

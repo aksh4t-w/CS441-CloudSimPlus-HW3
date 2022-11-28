@@ -1,25 +1,29 @@
 package CloudSimulation
 
 import HelperUtils.CommonUtils._
+import HelperUtils.CreateLogger
 import com.typesafe.config.{Config, ConfigFactory}
-import org.cloudbus.cloudsim.brokers.DatacenterBrokerSimple
 import org.cloudbus.cloudsim.core.CloudSim
 import org.cloudbus.cloudsim.datacenters.Datacenter
 import org.cloudbus.cloudsim.hosts.Host
-
 import org.cloudbus.cloudsim.vms.Vm
 import org.cloudsimplus.builders.tables.CloudletsTableBuilder
+import org.slf4j.Logger
 
 import java.util
 import java.util.ArrayList
 import scala.collection.convert.ImplicitConversions.`list asScalaBuffer`
 
-//  This simulation is tries to simulate an Email application hosted on the cloud, similar to Gmail.
+//  This simulation tries to simulate an Email application hosted on the cloud, similar to Gmail.
 class SaasSimulationApp1 {
+  val logger: Logger = CreateLogger(classOf[Any])
   val config: Config = ConfigFactory.load("SaaS_EMailApp.conf")
   val simulation = new CloudSim
   val hostList = new ArrayList[Host]
   val datacenterList: util.ArrayList[Datacenter] = createDatacenters(config, simulation, hostList)
+
+  logger.info("Creating a Star Topology Network")
+  configureStarTopology(config, datacenterList, simulation)
 
   val brokerList = createBrokers(config, simulation)
   val brokers = brokerList.length
@@ -35,11 +39,12 @@ class SaasSimulationApp1 {
   })
 
   simulation.start
-  brokerList.forEach(broker => {
-    new CloudletsTableBuilder(broker.getCloudletFinishedList).build()
-    printTotalVmsCost(broker)
-//    val brokerVmList : ArrayList[Vm] = broker.getVmCreatedList
-    printVMsPowerConsumption(config, vmLists.get(0))
+
+  // Printing costs and power consumption details.
+  (0 until brokers).foreach(i => {
+    new CloudletsTableBuilder(brokerList.get(i).getCloudletFinishedList).build()
+    printTotalVmsCost(brokerList.get(i))
+    printVMsPowerConsumption(config, vmLists.get(i))
   })
   printHostsCpuPowerConsumption(hostList)
 }

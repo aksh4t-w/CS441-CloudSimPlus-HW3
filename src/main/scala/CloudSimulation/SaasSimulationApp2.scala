@@ -34,10 +34,12 @@ class SaasSimulationApp2 {
   })
 
   simulation.start
-  brokerList.forEach(broker => {
-    new CloudletsTableBuilder(broker.getCloudletFinishedList).build()
-    printTotalVmsCost(broker)
-    printVMsPowerConsumption(config, vmLists.get(0))
+
+  // Printing costs and power consumption details.
+  (0 until brokers).foreach(i => {
+    new CloudletsTableBuilder(brokerList.get(i).getCloudletFinishedList).build()
+    printTotalVmsCost(brokerList.get(i))
+    printVMsPowerConsumption(config, vmLists.get(i))
   })
   printHostsCpuPowerConsumption(hostList)
 }

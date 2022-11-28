@@ -26,13 +26,10 @@ class IaasSimulation {
   // Round robin assignment of brokers to datacenters
   (0 until brokers).foreach(i => {
     logger.info("Broker" + brokerList.get(i) + " connecting to Datacenter 6")
-    connectToDatacenter(config, brokerList.get(i), 6, datacenterList, simulation)
-//    val vmList = createVMs(config)
-//    val cloudletList = createCloudlets(config)
-//    brokerList.get(i).submitVmList(vmList)
-//    brokerList.get(i).submitCloudletList(cloudletList)
+    connectToDatacenter(config, brokerList.get(i), 5, datacenterList, simulation)
   })
 
+  // The broker will create vms and cloudlets using the config file perform desired tasks.
   simulation.start
   brokerList.forEach(broker => {
     new CloudletsTableBuilder(broker.getCloudletFinishedList).build()

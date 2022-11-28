@@ -2,7 +2,6 @@ package HelperUtils
 
 import org.cloudbus.cloudsim.brokers.DatacenterBroker
 import org.cloudbus.cloudsim.brokers.DatacenterBrokerSimple
-import org.cloudbus.cloudsim.cloudlets.Cloudlet
 import org.cloudbus.cloudsim.cloudlets.network.CloudletExecutionTask
 import org.cloudbus.cloudsim.cloudlets.network.CloudletReceiveTask
 import org.cloudbus.cloudsim.cloudlets.network.CloudletSendTask
@@ -90,7 +89,6 @@ object NetworkUtils {
 
   //------------------------------------------------------------------------------------------------------------
   // VM definitions and functions:
-
 
   def createNetworkVm(config: Config, id: Int) = {
     val cloudType = config.getString("CloudType")

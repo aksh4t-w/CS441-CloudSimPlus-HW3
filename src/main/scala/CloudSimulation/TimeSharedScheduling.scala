@@ -5,7 +5,6 @@ import com.typesafe.config.ConfigFactory
 import org.cloudbus.cloudsim.brokers.DatacenterBrokerSimple
 import org.cloudbus.cloudsim.core.CloudSim
 import org.cloudbus.cloudsim.hosts.Host
-import org.cloudbus.cloudsim.schedulers.vm.{VmSchedulerSpaceShared, VmSchedulerTimeShared}
 import org.cloudsimplus.builders.tables.CloudletsTableBuilder
 
 import java.util
