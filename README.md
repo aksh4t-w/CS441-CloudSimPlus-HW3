@@ -40,3 +40,9 @@ docker push akshatw97/cs441-cloudsimplus-hw3:v1
 
 * Pulling the project from dockerhub: `docker pull akshatw97/cs441-cloudsimplus-hw3:v1`
 * Running the project: `docker run -it cs441-cloudsimplus-hw3:v1`
+
+## Testing
+* Unit tests are performed for checking the datacenter and host creation.
+* Other tests include checking for configuration variable types.
+
+## Thank You!
